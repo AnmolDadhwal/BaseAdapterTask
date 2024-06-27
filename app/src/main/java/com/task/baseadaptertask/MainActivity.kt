@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
                     dialogBinding.etName.error="Enter Anything"
                 }else{
                     list.add(dialogBinding.etName.text.toString().trim())
+                    listAdapter.notifyDataSetChanged()
                     dialog.dismiss()
                 }
             }
